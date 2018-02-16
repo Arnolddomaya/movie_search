@@ -1,5 +1,6 @@
 <h1>C'est ici pour chercher des film!</h1>
 
+<%= render "/layouts/flash" %>
 <%= form_for :search_movie, method: :get do |f| %>
   <%= f.text_field :title, placeholder:"Entrez le titre " %>
   <br><br>

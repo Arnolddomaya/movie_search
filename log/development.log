@@ -177,3 +177,150 @@ Unpermitted parameters: :utf8, :commit
 Completed 200 OK in 744ms (Views: 139.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-02-16 08:40:54 +0100
+Processing by MovieSearchersController#index as HTML
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 295ms (Views: 147.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=zerzer&commit=Search" for 127.0.0.1 at 2018-02-16 08:41:00 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>"zerzer"}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 517ms (Views: 23.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=terminator&commit=Search" for 127.0.0.1 at 2018-02-16 08:41:05 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>"terminator"}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 450ms (Views: 28.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=&commit=Search" for 127.0.0.1 at 2018-02-16 08:41:12 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>""}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+Unpermitted parameters: :utf8, :commit
+Completed 500 Internal Server Error in 203ms
+
+
+  
+NoMethodError (undefined method `collect' for nil:NilClass):
+  
+app/services/movie_db.rb:11:in `perform'
+app/controllers/movie_searchers_controller.rb:5:in `index'
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=&commit=Search" for 127.0.0.1 at 2018-02-16 08:47:23 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>""}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 13.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=terminator&commit=Search" for 127.0.0.1 at 2018-02-16 08:47:31 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>"terminator"}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+Completed 500 Internal Server Error in 2ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/services/movie_db.rb:4:in `initialize'
+app/controllers/movie_searchers_controller.rb:8:in `new'
+app/controllers/movie_searchers_controller.rb:8:in `index'
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=terminator&commit=Search" for 127.0.0.1 at 2018-02-16 08:49:06 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>"terminator"}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 497ms (Views: 42.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=Terminator&commit=Search" for 127.0.0.1 at 2018-02-16 08:49:16 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>"Terminator"}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 445ms (Views: 32.8ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=terMinator&commit=Search" for 127.0.0.1 at 2018-02-16 08:49:23 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>"terMinator"}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 456ms (Views: 20.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=&commit=Search" for 127.0.0.1 at 2018-02-16 08:49:31 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>""}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 16.9ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=&commit=Search" for 127.0.0.1 at 2018-02-16 08:50:12 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>""}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered movie_searchers/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 13.1ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=&commit=Search" for 127.0.0.1 at 2018-02-16 08:51:41 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>""}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.4ms)
+  Rendered movie_searchers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18ms (Views: 16.2ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=&commit=Search" for 127.0.0.1 at 2018-02-16 08:51:45 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>""}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.7ms)
+  Rendered movie_searchers/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 15.3ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=ter&commit=Search" for 127.0.0.1 at 2018-02-16 08:52:01 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>"ter"}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (1.0ms)
+  Rendered movie_searchers/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 513ms (Views: 32.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&search_movie%5Btitle%5D=&commit=Search" for 127.0.0.1 at 2018-02-16 08:52:06 +0100
+Processing by MovieSearchersController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_movie"=>{"title"=>""}, "commit"=>"Search"}
+Unpermitted parameters: :utf8, :commit
+  Rendering movie_searchers/index.html.erb within layouts/application
+  Rendered layouts/_flash.html.erb (0.6ms)
+  Rendered movie_searchers/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 23ms (Views: 19.8ms)
+
+
